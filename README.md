@@ -1,15 +1,15 @@
-# [Resume - Matheus Mota](https://matheus1714.github.io/matheusmota/)
+# [Resume - Matheus Mota](https://matheusmota-dev-br.github.io/portifolio-v1/)
 
 Summary based on the start [bootstrap template](https://blackrockdigital.github.io/startbootstrap-resume/) regarding my skills.
 
 ## Preview
 
-**[View Live Preview](https://matheus1714.github.io/matheusmota/)**
+**[View Live Preview](https://matheusmota-dev-br.github.io/portifolio-v1/)**
 
 ## Download and Installation
 
-* Clone the repo: `https://github.com/Matheus1714/matheusmota.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/Matheus1714/matheusmota)
+* Clone the repo: `https://github.com/matheusmota-dev-br/matheusmota.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/matheusmota-dev-br/matheusmota)
 
 ## Usage
 
