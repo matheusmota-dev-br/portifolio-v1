@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Matheus Mota — Software Engineer. Full-Stack Developer in continuous learning.">
+  <meta name="author" content="Matheus Mota">
 
-  <title>Resume - Matheus Mota</title>
+  <title>Matheus Mota — Software Engineer</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Base template styles -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <!-- Refresh visual (identidade matheusmota.dev.br) -->
+  <link href="css/theme.css" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/39354089?s=400&u=eae9623b78a0cbb328e68322a2a8c3a1de81fa5f&v=4" type="image/x-icon">
+  <!-- Favicon: logo >_ -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- Anti-flash: aplica o tema antes de pintar. -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = t;
+      } catch (e) { document.documentElement.dataset.theme = "light"; }
+    })();
+  </script>
 </head>
 
 <body id="page-top">
@@ -31,7 +41,8 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Matheus Mota</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-square mx-auto mb-2" src="img/profile.jpg" alt="photo of matheus smile">
+        <img class="img-fluid img-profile rounded-square mx-auto mb-2" src="https://github.com/matheusmota-dev-br.png" alt="photo of matheus smile">
+        <div class="sidebar-prompt">[math-term:~$]<span class="cursor"></span></div>
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,370 +50,313 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#lectures">Lectures</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#lectures">Lectures</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
       </ul>
     </div>
+    <button class="theme-toggle" type="button" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <span class="label">theme</span>
+    </button>
   </nav>
 
   <div class="container-fluid p-0">
 
+    <!-- ================= ABOUT ================= -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
+        <div class="whoami"><span class="prompt">[math-term:~$]</span> whoami</div>
         <h1 class="mb-0">Matheus
-          <span class="text-secondary">Mota</span>
+          <span class="accent">Mota</span><span class="cursor"></span>
         </h1>
-        <div class="subheading mb-5">BRAZIL · +55 (85) 99720-0622 ·
+        <p class="job-title">Software Engineer</p>
+        <div class="subheading mb-4">BRAZIL · +55 (85) 99720-0622 ·
           <a href="mailto:matheussilvamartins1714@gmail.com">matheussilvamartins1714@gmail.com</a>
         </div>
-        <p class="lead mb-5">
-          I am a student of Aerospace Engineering. I've been part of a junior company, participated in programming competitions and did an internship in the area of mobile applications. I like to develop apps and new ideas.
+        <p class="lead mb-4">
+          🚀 Full-Stack Developer in continuous learning. Experience working with Front-end and Back-end.
+          Master's in Computer Science from the Aeronautics Technological Institute (ITA), with a Bachelor's in
+          Aerospace Engineering completed with honors. I like to develop apps, intelligent systems and new ideas.
         </p>
+        <div class="d-flex flex-wrap mb-4" style="gap:.75rem">
+          <a class="btn btn-primary" style="background:var(--c-primary);border:none;font-family:'Fira Code',monospace" href="https://docs.google.com/document/d/1vBahNPGMIn-GkLgDjp8yZt3GkKaROV6n4E9ZlSJuado/export?format=pdf">&gt; download cv</a>
+          <a class="btn btn-outline-primary" style="border-color:var(--c-primary);color:var(--c-primary);font-family:'Fira Code',monospace" href="https://docs.google.com/document/d/1vBahNPGMIn-GkLgDjp8yZt3GkKaROV6n4E9ZlSJuado" target="_blank" rel="noopener noreferrer">&gt; online cv</a>
+          <a class="btn btn-outline-primary" style="border-color:var(--c-primary);color:var(--c-primary);font-family:'Fira Code',monospace" href="https://research.matheusmota.dev.br" target="_blank" rel="noopener noreferrer">&gt; research ↗</a>
+        </div>
         <div class="social-icons">
-          <a href="https://github.com/matheusmota-dev-br" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/matheus-mota-44b21a17b/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com/matheus_mota1714/" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://medium.com/@matheusmota-dev-br" target="_blank">
-            <i class="fab fa-medium"></i>
-          </a>
+          <a href="https://github.com/matheusmota-dev-br" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matheus-mota-44b21a17b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/matheus_mota1714/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://medium.com/@matheusmota-dev-br" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
+          <a href="http://lattes.cnpq.br/4944089934682851" target="_blank" rel="noopener noreferrer" title="Lattes"><i class="fas fa-graduation-cap"></i></a>
         </div>
       </div>
     </section>
 
     <hr class="m-0">
 
+    <!-- ================= EXPERIENCE ================= -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
+            <h3 class="mb-0">Software Engineer</h3>
+            <div class="subheading mb-3">Maria Educação</div>
+            <ul class="pills mb-2">
+              <li class="pill">Python</li><li class="pill">Django</li><li class="pill">TemporalIO</li>
+              <li class="pill">FastAPI</li><li class="pill">Docker</li><li class="pill">React</li>
+              <li class="pill">NextJS</li><li class="pill">Typescript</li><li class="pill">PostgreSQL</li>
+              <li class="pill">GCP</li><li class="pill">Flutter</li><li class="pill">Dart</li><li class="pill">Drift</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">February 2025 - Present</span></div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Software Engineer</h3>
+            <div class="subheading mb-3">DEEP ESG</div>
+            <p>I work on developing structural solutions for all of the company's products. Among the most relevant experiences, I highlight the implementation of login unification between products, allowing customers to access all services with a single account. This enabled the adoption of Single Sign-On (SSO) and significantly simplified access management, providing a more integrated and efficient experience for users.</p>
+            <ul class="pills">
+              <li class="pill">Vue3JS</li><li class="pill">Typescript</li><li class="pill">NodeJS</li>
+              <li class="pill">NextJS</li><li class="pill">NuxtJS</li><li class="pill">NestJS</li>
+              <li class="pill">PostgreSQL</li><li class="pill">Keycloak</li><li class="pill">GCP</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">February 2024 - January 2025</span></div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
             <h3 class="mb-0">Analyst Developer</h3>
             <div class="subheading mb-3">Hastings</div>
-            <p>
-              Development of robots for web scraping in the juridical area. 
-              Creation of neural networks and to improve the quality of extracted information. 
-              Python development using SQLServer database.
-            </p>
-            <p>
-              <a href="http://www.hastings.com.br/" target="_blank">Web Site</a>
-            </p>
+            <p>Development of robots for web scraping in the juridical area. Creation of neural networks to improve the quality of extracted information. Python development using an SQLServer database.</p>
+            <p><a href="http://www.hastings.com.br/" target="_blank" rel="noopener noreferrer">Web Site</a></p>
+            <ul class="pills">
+              <li class="pill">Python</li><li class="pill">Selenium</li><li class="pill">Neural Networks</li><li class="pill">SQLServer</li>
+            </ul>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">January 2022 - Present</span>
-          </div>
-        </div>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">CO-Founder</h3>
-            <div class="subheading mb-3">Business Applications</div>
-            <p>
-              Developed, along with another co-founder, the beginning of teaching Startup for college students 
-              to learn about creating Startups. The experience was developed with a group of entrepreneurs 
-              already in the area to talk to college students about their experience in the field and students 
-              create their ideas in practice by conducting research, creating business models and talking to 
-              customers.
-            </p>
-            <p>
-              <a href="https://www.linkedin.com/company/business-applications-ita/mycompany/" target="_blank">LinkedIn</a>
-            </p>
-            <p>
-              <a href="https://medium.com/business-applications-ita" target="_blank">Medium</a>
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">March 2021 - September 2021</span>
-          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">January 2022 - December 2023</span></div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Junior Web Developer</h3>
+            <h3 class="mb-0">Freelancer</h3>
+            <div class="subheading mb-3">Freelance</div>
+            <p>Responsible for optimizing and developing automations for data extraction in legal platforms, including overcoming captchas, FTP transfers and table modeling. With refactorings that improved clarity and performance, I implemented structures that allowed the execution of multiple scripts on different platforms, resulting in more efficient and flexible automation.</p>
+            <ul class="pills">
+              <li class="pill">Python</li><li class="pill">Django</li><li class="pill">Selenium</li><li class="pill">Microsoft SQL Server</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">January 2022 - December 2023</span></div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Intern</h3>
+            <div class="subheading mb-3">ITA Space Center (CEI)</div>
+            <p>I worked on the planning and preliminary implementation of a Service-Oriented Architecture (SOA) focused on the integration of Ground Segment (GS) systems. This integration involved several components, such as antennas, simulators and IoT devices, ensuring greater interoperability and efficiency in the system's operation.</p>
+            <ul class="pills">
+              <li class="pill">Python</li><li class="pill">Javascript</li><li class="pill">Virtual Box</li>
+              <li class="pill">MQTT</li><li class="pill">Docker</li><li class="pill">SAO</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">February 2023 - March 2023</span></div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Co-Founder</h3>
+            <div class="subheading mb-3">Business Application</div>
+            <p>I worked on developing a Marketplace application using Flutter, Dart, and Firebase, and was responsible for planning UI/UX elements using Figma. Later, I gave training on creating applications aimed at beginning university students, including a song-lyrics search engine project and practical tutorials. We also taught early-stage students about creating Startups alongside experienced entrepreneurs.</p>
+            <p>
+              <a href="https://www.linkedin.com/company/business-applications-ita/mycompany/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+              <a href="https://medium.com/business-applications-ita" target="_blank" rel="noopener noreferrer">Medium</a>
+            </p>
+            <ul class="pills">
+              <li class="pill">Flutter</li><li class="pill">Dart</li><li class="pill">Firebase</li><li class="pill">Figma</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">March 2021 - September 2021</span></div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Intern</h3>
             <div class="subheading mb-3">Quero Education</div>
-            <p>
-              I developed an application for the academic center of my college. 
-              I gained a lot of experience in the languages React, React Native and Flask.
-              I also gained a lot of experience in project flow, security, 
-              efficiency of queries and organization at work.
-            </p>
-            <p>
-              <a href="https://medium.com/techatquero/quero-e-ita-conhe%C3%A7a-o-programa-de-engenharia-que-uniu-esses-nomes-9900ab38720a" target="_blank">Reference article about the project carried out</a>
-            </p>
+            <p>I developed software for the Academic Center (CASD) to automate and optimize manual processes, such as room scheduling, laundry scheduling, and issuing and monthly control of bills for students. I worked as a Full-Stack developer, covering everything from modeling and creating the database to developing an application for students and a management interface for administrators.</p>
+            <p><a href="https://medium.com/techatquero/quero-e-ita-conhe%C3%A7a-o-programa-de-engenharia-que-uniu-esses-nomes-9900ab38720a" target="_blank" rel="noopener noreferrer">Reference article about the project</a></p>
+            <ul class="pills">
+              <li class="pill">React</li><li class="pill">React Native</li><li class="pill">Material UI</li>
+              <li class="pill">Flask</li><li class="pill">NodeJS</li>
+            </ul>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">October 2019 - April 2020</span>
-          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">October 2019 - April 2020</span></div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">Junior Web Developer</h3>
-            <div class="subheading mb-3">ITA Júnior</div>
-            <p>
-              I worked on developing a website for an office furniture e-commerce, using NodeJS tools, 
-              back-end, and Bootstrap, front-end.
-              I developed the database of a personalized Psychiatric Hospital using SQLServer.
-              I participated in an event of junior companies ENEJ 2019.
-              I taught web, javascript, html, css, django, git and github concepts classes.
-              I developed an e-commerce templete working with Cookies and online payments.
-              I created some tutorials written for members about javascript, css, html, django, nodejs, MVC and REST.
-            </p>
-            <p>
-              <a href="https://medium.com/ranbookm/iniciativas-ita-f41a7631a3f1" target="_blank">To learn more about ITA's initiatives</a>
-            </p>
+            <h3 class="mb-0">Full-stack Developer</h3>
+            <div class="subheading mb-3">ITA Junior</div>
+            <p>I was responsible for several internal projects, including a customized ERP for a psychiatric hospital (process flowcharts, database and interfaces). I taught classes to new members covering basic and advanced web development, developed an e-commerce template working with cookies and online payments, and wrote tutorials on javascript, css, html, django, nodejs, MVC and REST. I also participated in ENEJ 2019.</p>
+            <p><a href="https://medium.com/ranbookm/iniciativas-ita-f41a7631a3f1" target="_blank" rel="noopener noreferrer">More about ITA's initiatives</a></p>
+            <ul class="pills">
+              <li class="pill">HTML</li><li class="pill">CSS</li><li class="pill">Javascript</li>
+              <li class="pill">NodeJS</li><li class="pill">ReactJS</li><li class="pill">SQLServer</li>
+            </ul>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">July 2018 - December 2019</span>
-          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">September 2018 - October 2019</span></div>
         </div>
 
       </div>
-
     </section>
 
     <hr class="m-0">
 
+    <!-- ================= EDUCATION ================= -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
 
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Master in Computer Science</h3>
+            <div class="subheading mb-3">Aeronautics Technological Institute (ITA)</div>
+            <p>Research in Artificial Intelligence focused on binary text classification of academic works for systematic literature reviews, evaluated against the ISO 23053 and 25010 standards. Thesis defended and approved in 2025, advised by Prof. Dr. Adilson Marques da Cunha.</p>
+          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">August 2023 - 2025</span></div>
+        </div>
+
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">Instituto Tecnológico de Aeronáutica(ITA)</h3>
-            <div class="subheading mb-3">Aerospace Engineering</div>
+            <h3 class="mb-0">Bachelor of Aerospace Engineering</h3>
+            <div class="subheading mb-3">Aeronautics Technological Institute (ITA)</div>
+            <p>Graduated with honors, with foundation in software development, data structures, algorithms, and systems engineering. Gained hands-on experience through diverse academic projects and internships at tech companies, showcasing a commitment to innovation and excellence in technology.</p>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-secondary">February 2018 - Present</span>
-          </div>
+          <div class="resume-date text-md-right"><span class="text-secondary">January 2018 - December 2023</span></div>
         </div>
       </div>
     </section>
 
     <hr class="m-0">
 
+    <!-- ================= SKILLS ================= -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-
-          <li class="list-inline-item">
-              <img src="img/npm.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/node.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/react.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/TS.png" width="45px" height="100%" />
-          </li>
-          
-          <li class="list-inline-item">
-              <img src="img/flutter.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/dart.png" width="45px" height="100%" />
-          </li>
-
-          <li class="list-inline-item">
-            <img src="img/python.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/postgresql.png" width="45px" height="100%" />
-          </li>
-
-          <li class="list-inline-item">
-            <img src="img/cpp.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/C.jpg" width="80px" height="100%" />
-          </li>
-
-          <li class="list-inline-item">
-            <img src="img/heroku.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/git.png" width="45px" height="100%" />
-          </li>
-
-          <li class="list-inline-item">
-            <img src="img/html.png" width="60px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/js.png" width="45px" height="100%" />
-          </li>
-          <li class="list-inline-item">
-            <img src="img/css.png" width="60px" height="100%" />
-          </li>
+        <div class="subheading mb-3">Languages &amp; Tools</div>
+        <ul class="pills mb-4">
+          <li class="pill">Vue3JS</li><li class="pill">React</li><li class="pill">Typescript</li>
+          <li class="pill">NodeJS</li><li class="pill">NextJS</li><li class="pill">NuxtJS</li>
+          <li class="pill">NestJS</li><li class="pill">PostgreSQL</li><li class="pill">Python</li>
+          <li class="pill">Django</li><li class="pill">FastAPI</li><li class="pill">Docker</li>
+          <li class="pill">Flutter</li><li class="pill">Dart</li><li class="pill">GCP</li>
         </ul>
 
         <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              List my problem on features
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Create cards that I will resolve with my teams.
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging
-            </li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum
-            </li>
-          </ul>
-        </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>
-          I like to develop web and mobile apps using React and Flutter. 
-          Sometimes I do app programming training at college, like project dingo_music.
-        </p>
-        <p>
-          In college I like to take DataScience subjects, such as:
-        </p>
-        <ul>
-          <li>
-            <b>CE-293 · Artificial Intelligence for Cyber Security</b>
-          </li>
-          <li>
-            <b>PO-240 · Advanced Topics in Operational Process: Solving Problems via Mathematical Modeling</b>
-          </li>
-          <li>
-            <b>CE-263 · Big Data Techniques</b>
-          </li>
-          <li>
-            <b>PO-232 · Graph Algorithms</b>
-          </li>
+        <ul class="fa-ul mb-0">
+          <li><i class="fa-li fa fa-check"></i>List my problems on features</li>
+          <li><i class="fa-li fa fa-check"></i>Create cards that I will resolve with my teams</li>
+          <li><i class="fa-li fa fa-check"></i>Cross Browser Testing &amp; Debugging</li>
+          <li><i class="fa-li fa fa-check"></i>Agile Development &amp; Scrum</li>
         </ul>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="lectures">
+    <!-- ================= PROJECTS ================= -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
-        <h2 class="mb-5">Lectures</h2>
-
-        <p>I like to pass on my knowledge on the internet. Here are some I've done.</p>
-
-        <div class="resume-content">
-          <div class="subheading mb-3"><a href="https://medium.com/business-applications-ita" target="_blank">Business Application ITA</a></div>
-          <p>
-            Talks about technologies on the market and tips.
-          </p>
+        <h2 class="mb-5">Projects</h2>
+        <div class="projects-grid">
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/google-docs-clone" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/google-docs-clone.png')"><span class="overlay"><h3>Google Docs Clone</h3><span class="type">Website</span></span></a>
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/monorepo-barber-store" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/barber-store.png')"><span class="overlay"><h3>Barber Store</h3><span class="type">Website</span></span></a>
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/summary-financial-transctions-app" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/summary-financial-transaction.png')"><span class="overlay"><h3>Summary Finantial Transaction</h3><span class="type">Website</span></span></a>
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/url-shortener-web" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/url-shortner.png')"><span class="overlay"><h3>URL Shortener</h3><span class="type">Website</span></span></a>
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/daily-diet-api" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/daily-diet-api.png')"><span class="overlay"><h3>Daily Diet (API)</h3><span class="type">Api</span></span></a>
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/english-study-website" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/english-blog.png')"><span class="overlay"><h3>English Blog</h3><span class="type">Website</span></span></a>
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/speaking-ai-web" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/speaking-api.png')"><span class="overlay"><h3>Speaking AI (Web)</h3><span class="type">Website</span></span></a>
+          <a class="project-card" href="https://github.com/matheusmota-dev-br/translate-sql-with-ai" target="_blank" rel="noopener noreferrer" style="background-image:url('img/projects/ask-sql.png')"><span class="overlay"><h3>Translate SQL with AI</h3><span class="type">Website</span></span></a>
         </div>
-
-        <div class="resume-content">
-          <div class="subheading mb-3"><a href="https://medium.com/matheus-mota-aesp-ita" target="_blank">Matheus Mota AESP ITA</a></div>
-          <p>
-            I summarize the subjects I study.
-          </p>
-        </div>
-
-        <div class="resume-content">
-          <div class="subheading mb-3"><a href="https://medium.com/matheus-mota-ita-t-22" target="_blank">Matheus Mota ITA T-22</a></div>
-          <p>
-            Comment about my time in college and experiences I had.
-          </p>
-        </div>
-
-        <div class="resume-content">
-          <div class="subheading mb-3"><a href="https://medium.com/ranbookm" target="_blank">Ranbookm</a></div>
-          <p>
-            My first blog. Comment on various subjects in the format of posts.
-          </p>
-        </div>
-
-        <div class="resume-content">
-          <div class="subheading mb-3"><a href="https://github.com/matheusmota-dev-br/dingo_music" target="_blank">Dingo Music</a></div>
-          <p>
-            Music app tutorial. Training app for Business Applications
-          </p>
-        </div>
-
-        <div class="resume-content">
-          <div class="subheading mb-3"><a href="https://github.com/matheusmota-dev-br/Tutoriais" target="_blank">Tutorials</a></div>
-          <p>
-            Short HTML, CSS, Javascript and Django tutorials.
-          </p>
-        </div>
-        
       </div>
     </section>
 
     <hr class="m-0">
 
+    <!-- ================= INTERESTS ================= -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>I like to develop web and mobile apps using React, Vue and Flutter. Sometimes I run app-programming training sessions at college, like the dingo_music project.</p>
+        <p>My research interests span machine learning, natural language processing and data mining. In college I enjoy Data Science subjects, such as:</p>
+        <ul>
+          <li><b>CE-293 · Artificial Intelligence for Cyber Security</b></li>
+          <li><b>PO-240 · Advanced Topics in Operational Process: Solving Problems via Mathematical Modeling</b></li>
+          <li><b>CE-263 · Big Data Techniques</b></li>
+          <li><b>PO-232 · Graph Algorithms</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- ================= LECTURES ================= -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="lectures">
+      <div class="w-100">
+        <h2 class="mb-5">Lectures</h2>
+        <p>I like to pass on my knowledge on the internet. Here are some I've done.</p>
+
+        <div class="resume-content mb-3">
+          <div class="subheading mb-1"><a href="https://medium.com/business-applications-ita" target="_blank" rel="noopener noreferrer">Business Application ITA</a></div>
+          <p>Talks about technologies on the market and tips.</p>
+        </div>
+        <div class="resume-content mb-3">
+          <div class="subheading mb-1"><a href="https://medium.com/matheus-mota-aesp-ita" target="_blank" rel="noopener noreferrer">Matheus Mota AESP ITA</a></div>
+          <p>I summarize the subjects I study.</p>
+        </div>
+        <div class="resume-content mb-3">
+          <div class="subheading mb-1"><a href="https://medium.com/matheus-mota-ita-t-22" target="_blank" rel="noopener noreferrer">Matheus Mota ITA T-22</a></div>
+          <p>Comments about my time in college and the experiences I had.</p>
+        </div>
+        <div class="resume-content mb-3">
+          <div class="subheading mb-1"><a href="https://medium.com/ranbookm" target="_blank" rel="noopener noreferrer">Ranbookm</a></div>
+          <p>My first blog. Comments on various subjects in the format of posts.</p>
+        </div>
+        <div class="resume-content mb-3">
+          <div class="subheading mb-1"><a href="https://github.com/matheusmota-dev-br/dingo_music" target="_blank" rel="noopener noreferrer">Dingo Music</a></div>
+          <p>Music app tutorial. Training app for Business Applications.</p>
+        </div>
+        <div class="resume-content">
+          <div class="subheading mb-1"><a href="https://github.com/matheusmota-dev-br/Tutoriais" target="_blank" rel="noopener noreferrer">Tutorials</a></div>
+          <p>Short HTML, CSS, Javascript and Django tutorials.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- ================= AWARDS ================= -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            <a href="https://github.com/matheusmota-dev-br/hackathon-ccr" target="_blank">Hackathon CCR 2020</a>
-            - <a href="https://drive.google.com/file/d/1oZrIRbplTxH2fAi7vVVZkZstw9fC0jH6/view?usp=sharing" target="_blank">Certificado</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            <a href="https://github.com/diegood12/vanelluschilensis" target="_blank">Hackathon Code in Quero 2019</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            ENEJ 2019 - 
-            <a href="https://drive.google.com/file/d/17kliLlY2xCGQOPDMcY6vsxX1HJt4NnnI/view?usp=sharing" target="_blank">Certificado</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Gran Prinx 2019 - 
-            <a href="https://drive.google.com/file/d/0B7Ngs2EkQApoeXlHNmdrMk82NzJ5R2JwaXBEMjFkX0ZhX2Uw/view?usp=sharing&resourcekey=0-i821BOSrwRPiIbbdWRYJbg" target="_blank">Certificado</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Workshop INTEL de Inteligência Artificial 2019 - 
-            <a href="https://drive.google.com/file/d/18H7CiudFPT4BETjoa8LtflFYbG83GQFh/view?usp=sharing" target="_blank">Certificado</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Hackathon VTEX 2019
-          </li>
+          <li><i class="fa-li fa fa-trophy"></i><a href="https://github.com/matheusmota-dev-br/hackathon-ccr" target="_blank" rel="noopener noreferrer">Hackathon CCR 2020</a> - <a href="https://drive.google.com/file/d/1oZrIRbplTxH2fAi7vVVZkZstw9fC0jH6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificado</a></li>
+          <li><i class="fa-li fa fa-trophy"></i><a href="https://github.com/diegood12/vanelluschilensis" target="_blank" rel="noopener noreferrer">Hackathon Code in Quero 2019</a></li>
+          <li><i class="fa-li fa fa-trophy"></i>ENEJ 2019 - <a href="https://drive.google.com/file/d/17kliLlY2xCGQOPDMcY6vsxX1HJt4NnnI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificado</a></li>
+          <li><i class="fa-li fa fa-trophy"></i>Gran Prinx 2019 - <a href="https://drive.google.com/file/d/0B7Ngs2EkQApoeXlHNmdrMk82NzJ5R2JwaXBEMjFkX0ZhX2Uw/view?usp=sharing&resourcekey=0-i821BOSrwRPiIbbdWRYJbg" target="_blank" rel="noopener noreferrer">Certificado</a></li>
+          <li><i class="fa-li fa fa-trophy"></i>Workshop INTEL de Inteligência Artificial 2019 - <a href="https://drive.google.com/file/d/18H7CiudFPT4BETjoa8LtflFYbG83GQFh/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificado</a></li>
+          <li><i class="fa-li fa fa-trophy"></i>Hackathon VTEX 2019</li>
         </ul>
       </div>
     </section>
@@ -412,12 +366,22 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+
+  <!-- Theme toggle -->
+  <script>
+    (function () {
+      var btn = document.querySelector(".theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var cur = document.documentElement.dataset.theme || "light";
+        var next = cur === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+    })();
+  </script>
 
 </body>
 

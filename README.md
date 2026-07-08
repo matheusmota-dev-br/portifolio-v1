@@ -1,6 +1,11 @@
 # [Resume - Matheus Mota](https://matheusmota-dev-br.github.io/portifolio-v1/)
 
-Summary based on the start [bootstrap template](https://blackrockdigital.github.io/startbootstrap-resume/) regarding my skills.
+My resume / portfolio. Keeps the sidebar-with-photo skeleton of the original
+[bootstrap template](https://blackrockdigital.github.io/startbootstrap-resume/),
+refreshed with the visual identity of [matheusmota.dev.br](https://matheusmota.dev.br):
+Fira Code, a blue/indigo palette, terminal accents (`[math-term:~$]`, `# section`),
+skill pills, a projects grid and a light/dark theme toggle. The refresh lives in
+`css/theme.css` (loaded after the base `css/resume.min.css`).
 
 ## Preview
 
