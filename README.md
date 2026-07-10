@@ -7,14 +7,20 @@ Fira Code, a blue/indigo palette, terminal accents (`[math-term:~$]`, `# section
 skill pills, a projects grid and a light/dark theme toggle. The refresh lives in
 `css/theme.css` (loaded after the base `css/resume.min.css`).
 
+The color tokens (`--c-*` CSS variables at the top of `css/theme.css`) mirror the
+`@repo/design-tokens` package in [matheusmota.dev.br](https://matheusmota.dev.br),
+so the palette stays in sync across both sites.
+
 ## Preview
+
+[![Portfolio preview](img/preview.png)](https://matheusmota-dev-br.github.io/portifolio-v1/)
 
 **[View Live Preview](https://matheusmota-dev-br.github.io/portifolio-v1/)**
 
 ## Download and Installation
 
-* Clone the repo: `https://github.com/matheusmota-dev-br/matheusmota.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/matheusmota-dev-br/matheusmota)
+* Clone the repo: `git clone https://github.com/matheusmota-dev-br/portifolio-v1.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/matheusmota-dev-br/portifolio-v1)
 
 ## Usage
 
