@@ -9,9 +9,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700&display=swap");
 
+:root {
+  /* Status (iguais nos dois temas) — sync com @repo/design-tokens */
+  --c-success: #22c55e; /* green-500  */
+  --c-warning: #eab308; /* yellow-500 */
+  --c-error: #ef4444; /* red-500    */
+  --c-info: #0ea5e9; /* sky-500    */
+}
+
 :root,
 [data-theme="light"] {
-  --c-primary: #3b82f6;
+  --c-primary: #2563eb; /* blue-600 — AA contrast on light bg */
   --c-secondary: #818cf8;
   --c-text: #111827;
   --c-text-offset: #4b5563;
@@ -25,11 +33,11 @@
 }
 
 [data-theme="dark"] {
-  --c-primary: #60a5fa;
+  --c-primary: #3b82f6; /* blue-500 — AA: white text on primary buttons */
   --c-secondary: #a5b4fc;
   --c-text: #f9fafb;
   --c-text-offset: #9ca3af;
-  --c-bg: #0d1424;
+  --c-bg: #111827; /* gray-900 */
   --c-bg-offset: #1f2937;
   --c-border: rgb(249 250 251 / 10%);
   --c-sidebar: #0a0f1c;
@@ -381,5 +389,5 @@ hr {
 
 /* Awards trophy mantém o dourado (warning) */
 .fa-trophy {
-  color: #eab308 !important;
+  color: var(--c-warning) !important;
 }
