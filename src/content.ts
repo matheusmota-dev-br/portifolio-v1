@@ -14,16 +14,10 @@ export const profile = {
   location: "BRAZIL",
   phone: "+55 (85) 99720-0622",
   email: "matheussilvamartins1714@gmail.com",
-  phrase: {
-    text: "Wherever your level of aspiration is, that's where you can be one day.",
-    author: "Adilson Marques da Cunha",
-  },
   cvEnHref: "https://matheusmota.dev.br/api/cv?lang=en-US",
   cvPtHref: "https://matheusmota.dev.br/api/cv?lang=pt-BR",
   cvOnlineHref: "https://matheusmota.dev.br/cv",
   researchHref: "https://research.matheusmota.dev.br",
-  websiteHref: "https://matheusmota.dev.br",
-  terminalHref: "https://matheusmota.dev.br/terminal",
 };
 
 /** Chaves do `iconMap` do design system. */
@@ -38,18 +32,14 @@ export const social = [
 export const navItems: NavItem[] = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
-  { name: "Workflow", href: "#workflow" },
+  { name: "Education", href: "#education" },
+  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Interests", href: "#interests" },
   { name: "Lectures", href: "#lectures" },
   { name: "Awards", href: "#awards" },
 ];
 
-export const footerPages: NavItem[] = [
-  { name: "Website", href: profile.websiteHref },
-  { name: "Research", href: profile.researchHref },
-  { name: "CV", href: profile.cvOnlineHref },
-];
 
 export const toolSkills = skills(
   "Vue3JS",

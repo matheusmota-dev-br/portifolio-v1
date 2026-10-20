@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700&display=swap");
 @import "@matheusmota-dev-br/ui/styles.css";
 
-/* Âncoras do menu não ficam escondidas atrás do header fixo. */
-#root [id] {
-  scroll-margin-top: 6rem;
+/* Títulos do layout original: Saira Condensed (font-display do DS). */
+:root {
+  --font-display: "Saira Condensed", var(--font-mono);
 }
