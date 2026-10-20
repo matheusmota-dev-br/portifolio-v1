@@ -1,47 +1,42 @@
 # [Resume - Matheus Mota](https://matheusmota-dev-br.github.io/portifolio-v1/)
 
-My resume / portfolio. Keeps the sidebar-with-photo skeleton of the original
-[bootstrap template](https://blackrockdigital.github.io/startbootstrap-resume/),
-refreshed with the visual identity of [matheusmota.dev.br](https://matheusmota.dev.br):
-Fira Code, a blue/indigo palette, terminal accents (`[math-term:~$]`, `# section`),
-skill pills, a projects grid and a light/dark theme toggle. The refresh lives in
-`css/theme.css` (loaded after the base `css/resume.min.css`).
-
-The color tokens (`--c-*` CSS variables at the top of `css/theme.css`) mirror the
-`@repo/design-tokens` package in [matheusmota.dev.br](https://matheusmota.dev.br),
-so the palette stays in sync across both sites.
+My resume / portfolio, built with the design system of
+[matheusmota.dev.br](https://matheusmota.dev.br) (`@matheusmota-dev-br/ui`, a
+private package on GitHub Packages): React + Vite + Tailwind, deployed to
+GitHub Pages.
 
 ## Preview
 
-[![Portfolio preview](img/preview.png)](https://matheusmota-dev-br.github.io/portifolio-v1/)
+[![Portfolio preview](public/img/preview.png)](https://matheusmota-dev-br.github.io/portifolio-v1/)
 
-**[View Live Preview](https://matheusmota-dev-br.github.io/portifolio-v1/)**
+## Content
 
-## Download and Installation
+All the text lives in `src/content.ts` and `src/resume.ts` (experience and
+education). The page composition is in `src/app.tsx`, using only components
+from the design system.
 
-* Clone the repo: `git clone https://github.com/matheusmota-dev-br/portifolio-v1.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/matheusmota-dev-br/portifolio-v1)
+## Development
 
-## Usage
+The design system is private, so installing needs a GitHub token (classic)
+with the `read:packages` scope, read by `.npmrc`:
 
-### Basic Usage
+```bash
+export GH_MATHEUS_MOTA_UI=ghp_xxx
+pnpm install
+pnpm dev
+```
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+## Deploy and updates
 
-### Advanced Usage
+- Every push to `master` builds and publishes to GitHub Pages
+  (`.github/workflows/deploy.yml`). The token comes from the `GH_MATHEUS_MOTA_UI`
+  secret of the `envs` environment.
+- New versions of the design system arrive by themselves: Dependabot opens a PR
+  daily when there is a new `@matheusmota-dev-br/ui`, and
+  `dependabot-auto-merge.yml` merges it and triggers the deploy. Dependabot reads
+  the token from its own secret with the same name (Settings → Secrets and
+  variables → Dependabot).
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+## License
 
-#### Gulp Tasks
-
-- `gulp` the default task that builds everything
-- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
-
-You must have npm installed globally in order to use this build environment.
-
-## Copyright and License
-
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+[MIT](LICENSE).
