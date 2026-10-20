@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@matheusmota-dev-br/ui':
-        specifier: ^0.1.1
-        version: 0.1.1(@tailwindcss/typography@0.5.20(tailwindcss@3.4.19))(@tiptap/core@2.27.3(@tiptap/pm@2.27.3))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(html-entities@2.6.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(tailwindcss@3.4.19)
+        specifier: ^0.1.2
+        version: 0.1.2(@tailwindcss/typography@0.5.20(tailwindcss@3.4.19))(@tiptap/core@2.27.3(@tiptap/pm@2.27.3))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(html-entities@2.6.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(tailwindcss@3.4.19)
       react:
         specifier: ^19.0.0
         version: 19.3.1
@@ -382,8 +382,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@matheusmota-dev-br/ui@0.1.1':
-    resolution: {integrity: sha512-sIKNYTR+suOb8lqLtn1yqua+L0msQBAH2Ed5k2/ih7oVifI+IqdPi/zLSI5H5yjoO7xn7DzjqTrtpcZzc+R82w==, tarball: https://npm.pkg.github.com/download/@matheusmota-dev-br/ui/0.1.1/6ec6e31b1b40fb4c82b0e4b373ec02d39233c256}
+  '@matheusmota-dev-br/ui@0.1.2':
+    resolution: {integrity: sha512-AuXzChZPODljg0jzaZnf+GAqRQo1TjKIkvDd/OCtvEMK+KkHmNLKtLa192ll2KVNcvK8iZaglXTa/hOPMY25Rw==, tarball: https://npm.pkg.github.com/download/@matheusmota-dev-br/ui/0.1.2/581b1d4201ff590b95bae816965c929eb0383f3c}
     peerDependencies:
       '@tailwindcss/typography': ^0.5.0
       react: ^19.0.0
@@ -3470,7 +3470,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@matheusmota-dev-br/ui@0.1.1(@tailwindcss/typography@0.5.20(tailwindcss@3.4.19))(@tiptap/core@2.27.3(@tiptap/pm@2.27.3))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(html-entities@2.6.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(tailwindcss@3.4.19)':
+  '@matheusmota-dev-br/ui@0.1.2(@tailwindcss/typography@0.5.20(tailwindcss@3.4.19))(@tiptap/core@2.27.3(@tiptap/pm@2.27.3))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(html-entities@2.6.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(tailwindcss@3.4.19)':
     dependencies:
       '@cantoo/pdf-lib': 2.11.1(html-entities@2.6.0)
       '@dbml/core': 8.3.1
