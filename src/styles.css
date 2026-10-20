@@ -1,0 +1,6 @@
+@import "@matheusmota-dev-br/ui/styles.css";
+
+/* Âncoras do menu não ficam escondidas atrás do header fixo. */
+#root [id] {
+  scroll-margin-top: 6rem;
+}
