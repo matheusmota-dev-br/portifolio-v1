@@ -31,11 +31,14 @@ pnpm dev
 - Every push to `master` builds and publishes to GitHub Pages
   (`.github/workflows/deploy.yml`). The token comes from the `GH_MATHEUS_MOTA_UI`
   secret of the `envs` environment.
-- New versions of the design system arrive by themselves: Dependabot opens a PR
-  daily when there is a new `@matheusmota-dev-br/ui`, and
-  `dependabot-auto-merge.yml` merges it and triggers the deploy. Dependabot reads
-  the token from its own secret with the same name (Settings → Secrets and
-  variables → Dependabot).
+- `master` only changes through pull requests: direct pushes, force pushes and
+  deleting the branch are blocked, and a PR can only be merged after the build
+  check (`.github/workflows/build-check.yml`, the same build as the deploy)
+  passes.
+- New versions of the design system arrive as PRs: Dependabot checks daily for
+  a new `@matheusmota-dev-br/ui` and opens a PR with the build check on it; the
+  merge is manual. Dependabot reads the token from its own secret with the same
+  name (Settings → Secrets and variables → Dependabot).
 
 ## License
 

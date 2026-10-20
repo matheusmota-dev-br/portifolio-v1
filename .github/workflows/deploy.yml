@@ -6,8 +6,7 @@ on:
   push:
     branches:
       - master
-  # Disparado também pelo auto-merge do Dependabot: merges feitos com o
-  # GITHUB_TOKEN não geram evento de push.
+  # Para republicar sem commit novo.
   workflow_dispatch:
 
 concurrency:

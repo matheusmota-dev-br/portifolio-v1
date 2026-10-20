@@ -7,8 +7,8 @@ registries:
     # separado do secret do environment `envs` usado pelo deploy.
     token: ${{ secrets.GH_MATHEUS_MOTA_UI }}
 updates:
-  # Só o design system: cada versão nova publicada vira um PR, que o
-  # dependabot-auto-merge.yml mergeia e publica.
+  # Só o design system: cada versão nova publicada vira um PR, com o build
+  # check rodando nele. O merge é manual.
   - package-ecosystem: npm
     directory: "/"
     registries:
